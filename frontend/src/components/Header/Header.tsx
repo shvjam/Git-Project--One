@@ -1,12 +1,13 @@
-import React from 'react';
+import styles from './Header.module.css';
+import logo from '../../assets/logo-dark.svg';
 
 function Header() {
   return (
-    <header className="App-header">
-      <div className="logo">
-        <img src="https://hugoinc.com/wp-content/themes/hugo-theme/static/logo-dark.svg" alt="Hugo Inc. logo" />
+    <header className={styles.header}>
+      <div className={styles.logo}>
+        <img src={logo} alt="Hugo Inc. logo" />
       </div>
-      <nav>
+      <nav className={styles.nav}>
         <ul>
           <li><a href="#">Solutions</a></li>
           <li><a href="#">Industries</a></li>
@@ -16,7 +17,7 @@ function Header() {
           <li><a href="#">Resources</a></li>
         </ul>
       </nav>
-      <div className="cta">
+      <div className={styles.cta}>
         <button>Get Started</button>
       </div>
     </header>
