@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <style>
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        transition: opacity 1s;
+      }
+      .intro {
+        text-align: center;
+      }
+      .intro h1 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+      }
+      .intro button {
+        background: none;
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="overlay" class="overlay">
+      <div class="intro">
+        <h1>اسم من جولیو است</h1>
+        <button id="enter-button">ورود</button>
+      </div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      const enterButton = document.getElementById('enter-button');
+      const overlay = document.getElementById('overlay');
+      enterButton.addEventListener('click', () => {
+        overlay.style.opacity = 0;
+        setTimeout(() => {
+          overlay.style.display = 'none';
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
