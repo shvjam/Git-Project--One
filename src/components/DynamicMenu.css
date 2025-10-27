@@ -7,6 +7,13 @@
   transition: opacity 0.5s;
   z-index: 100;
   direction: rtl;
+  display: none; /* Hidden by default on small screens */
+}
+
+@media (min-width: 1024px) {
+  .dynamic-menu {
+    display: block; /* Visible on larger screens */
+  }
 }
 
 .dynamic-menu.visible {

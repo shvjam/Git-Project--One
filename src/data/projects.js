@@ -83,7 +83,7 @@ export const projects = [
     modules: [
       {
         component: 'TextIntro',
-        text: 'یک پروژه شخصی برای exploration of generative art and storytelling through the medium of stones.',
+        text: 'یک پروژه شخصی برای کاوش در هنر مولد و داستان‌سرایی از طریق رسانه سنگ‌ها.',
       },
       {
         component: 'Media',
@@ -106,8 +106,17 @@ export const projects = [
     agency: 'Sketchin',
     completed: '۱۳۹۹',
     live: null,
-    awards: [],
-    modules: [],
+    awards: ['CSS Winner'],
+    modules: [
+        {
+            component: 'TextIntro',
+            text: 'یک کمپین دیجیتال برای هفته سیاه که از طریق یک تجربه تعاملی، کاربران را به خرید آگاهانه تشویق می‌کند.'
+        },
+        {
+            component: 'Media',
+            media: [{ src: '/videos/black-week/bw_1.mp4', alt: 'ویدیوی هفته سیاه' }]
+        }
+    ],
   },
   {
     id: 'no-is-a-four-letter-word',
@@ -119,7 +128,12 @@ export const projects = [
     completed: '۱۴۰۲',
     live: null,
     awards: [],
-    modules: [],
+    modules: [
+        {
+            component: 'TextIntro',
+            text: 'یک تجربه وب تعاملی که مفهوم "نه" را از طریق تایپوگرافی جنبشی و طراحی مینیمال بررسی می‌کند.'
+        }
+    ],
   },
   {
     id: 'the-sign-of-the-lion',
@@ -131,7 +145,12 @@ export const projects = [
     completed: '۱۴۰۲',
     live: null,
     awards: [],
-    modules: [],
+    modules: [
+        {
+            component: 'TextIntro',
+            text: 'یک داستان بصری که با الهام از نمادهای باستانی و طالع‌بینی، به بررسی نشان شیر می‌پردازد.'
+        }
+    ],
   },
   {
     id: 'the-t-concept',
@@ -143,6 +162,11 @@ export const projects = [
     completed: '۱۴۰۲',
     live: null,
     awards: [],
-    modules: [],
+    modules: [
+        {
+            component: 'TextIntro',
+            text: 'یک کاوش هنری در مورد "مفهوم T" که تخصص عمیق در یک زمینه و دانش گسترده در زمینه‌های دیگر را نشان می‌دهد.'
+        }
+    ],
   },
 ];

@@ -1,6 +1,6 @@
 .about-container {
   color: #fff;
-  padding: 4rem;
+  padding: 4rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,9 +27,17 @@
 
 .about-details {
   display: flex;
-  justify-content: flex-start;
-  gap: 4rem;
+  flex-direction: column;
+  gap: 2rem;
   margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .about-details {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 4rem;
+  }
 }
 
 .about-detail {

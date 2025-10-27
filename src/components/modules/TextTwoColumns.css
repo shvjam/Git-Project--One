@@ -1,10 +1,19 @@
 .text-two-columns-container {
   display: flex;
-  justify-content: space-between;
-  padding: 4rem;
-  gap: 4rem;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
   direction: rtl;
   background-color: #050505;
+}
+
+@media (min-width: 768px) {
+  .text-two-columns-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 4rem;
+  }
 }
 
 .column {

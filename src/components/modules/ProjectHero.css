@@ -19,15 +19,28 @@
   height: 100%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* Align content to the right for RTL */
   align-items: flex-end;
   padding: 4rem;
   color: #fff;
   direction: rtl;
 }
 
-.project-hero-overlay h1 {
+.project-hero-content {
+  text-align: right;
+}
+
+.project-hero-content h1 {
   font-size: 4rem;
   font-weight: 700;
-  text-align: right;
+}
+
+.project-details {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.project-details span {
+  font-size: 1.1rem;
 }

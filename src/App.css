@@ -4,6 +4,7 @@ body {
   background-color: #000;
   color: #fff;
   font-family: 'Vazirmatn', sans-serif;
+  cursor: none;
 }
 
 a {
@@ -14,4 +15,27 @@ a {
 
 a:hover {
   color: #aaa;
+}
+
+.back-to-home {
+  border: 1px solid #fff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.back-to-home:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  p, a {
+    font-size: 1rem !important;
+  }
 }

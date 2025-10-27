@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { projects } from '../data/projects';
 import TextIntro from '../components/modules/TextIntro';
 import Media from '../components/modules/Media';
@@ -27,7 +27,7 @@ export default function Project() {
   }
 
   return (
-    <div style={{ color: 'white' }}>
+    <div style={{ color: 'white', background: '#000' }}>
       <ProjectHero project={project} />
       {project.modules.map((module, index) => {
         const ModuleComponent = moduleComponents[module.component];
@@ -37,6 +37,9 @@ export default function Project() {
         }
         return <ModuleComponent key={index} {...module} />;
       })}
+      <div style={{ textAlign: 'center', padding: '4rem' }}>
+        <Link to="/" className="back-to-home">بازگشت به خانه</Link>
+      </div>
     </div>
   );
 }

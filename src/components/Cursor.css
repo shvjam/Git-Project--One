@@ -1,0 +1,23 @@
+.custom-cursor {
+  position: fixed;
+  top: -10px; /* Offset to center */
+  left: -10px; /* Offset to center */
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease-out, width 0.3s, height 0.3s, border-color 0.3s;
+  mix-blend-mode: difference;
+}
+
+.custom-cursor.hover {
+  width: 50px;
+  height: 50px;
+  border-color: #ff4500; /* Example hover color */
+}
+
+body {
+    cursor: none;
+}
