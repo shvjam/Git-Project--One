@@ -1,0 +1,36 @@
+.dynamic-menu {
+  position: fixed;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 100;
+  direction: rtl;
+}
+
+.dynamic-menu.visible {
+  opacity: 1;
+}
+
+.dynamic-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dynamic-menu li {
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.dynamic-menu li a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.dynamic-menu li.active a {
+  color: #aaa;
+  font-weight: 700;
+}

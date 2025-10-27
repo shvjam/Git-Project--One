@@ -1,0 +1,41 @@
+.text-two-columns-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  gap: 4rem;
+  direction: rtl;
+  background-color: #050505;
+}
+
+.column {
+  flex: 1;
+  text-align: right;
+}
+
+.column h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.column p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.technologies {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+.tech-tag {
+  background-color: #222;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 0.9rem;
+}

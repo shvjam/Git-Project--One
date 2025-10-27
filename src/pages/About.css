@@ -6,6 +6,7 @@
   align-items: center;
   min-height: 100vh;
   direction: rtl;
+  background-color: #111;
 }
 
 .about-content {
@@ -16,16 +17,18 @@
 .about-content h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
+  font-weight: 700;
 }
 
 .about-content p {
   font-size: 1.2rem;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .about-details {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 4rem;
   margin-top: 3rem;
 }
 
@@ -36,4 +39,5 @@
 .about-detail h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  font-weight: 700;
 }

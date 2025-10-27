@@ -1,0 +1,12 @@
+.text-intro-container {
+  padding: 4rem;
+  text-align: right;
+  max-width: 800px;
+  margin: 0 auto;
+  direction: rtl;
+}
+
+.text-intro-container p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+}

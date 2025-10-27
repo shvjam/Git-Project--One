@@ -1,9 +1,13 @@
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
-import { AnimatePresence, motion } from 'framer-motion'
-import Home from './pages/Home'
-import About from './pages/About'
-import './App.css'
-import './pages/About.css'
+import { useState } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
+import Home from './pages/Home';
+import About from './pages/About';
+import Project from './pages/Project';
+import EntryPage from './components/EntryPage';
+import './App.css';
+import './pages/About.css';
+import './components/EntryPage.css';
 
 const pageTransition = {
   in: {
@@ -16,6 +20,15 @@ const pageTransition = {
 
 function App() {
   const location = useLocation();
+  const [showEntryPage, setShowEntryPage] = useState(true);
+
+  const handleEnter = () => {
+    setShowEntryPage(false);
+  };
+
+  if (showEntryPage) {
+    return <EntryPage onEnter={handleEnter} />;
+  }
 
   return (
     <AnimatePresence mode="wait">
@@ -29,6 +42,7 @@ function App() {
         <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/project/:id" element={<Project />} />
         </Routes>
       </motion.div>
     </AnimatePresence>
@@ -40,7 +54,7 @@ function Root() {
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  )
+  );
 }
 
-export default Root
+export default Root;

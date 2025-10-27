@@ -1,0 +1,25 @@
+.awards-container {
+  padding: 4rem;
+  text-align: right;
+  direction: rtl;
+  background-color: #111;
+}
+
+.awards-container h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.awards-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.award-item {
+  padding: 1rem 2rem;
+  border: 1px solid #333;
+  font-size: 1.1rem;
+}

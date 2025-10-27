@@ -1,5 +1,6 @@
 import Scene from '../components/Scene'
-import { Link } from 'react-router-dom'
+import DynamicMenu from '../components/DynamicMenu'
+import '../components/DynamicMenu.css'
 
 export default function Home() {
   return (
@@ -8,9 +9,7 @@ export default function Home() {
         <Scene />
       </div>
       <div style={{ height: '600vh' }} />
-      <Link to="/about" style={{ position: 'fixed', bottom: '2rem', right: '2rem', color: 'white', zIndex: 10 }}>
-        درباره من
-      </Link>
+      <DynamicMenu />
     </>
   )
 }
